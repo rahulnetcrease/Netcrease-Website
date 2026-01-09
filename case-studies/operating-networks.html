@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Operating Networks — Case Study | Netcrease Global Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="../css/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { eyebrow: "#1C4987", heading: "#13315C", paragraph: "#113969", button: '#112D55' }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div id="header"></div>
+
+    <main class="pt-[88px]">
+        <section class="bg-white">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <span class="inline-block mb-4 text-sm text-eyebrow font-semibold uppercase tracking-widest">Global Operations</span>
+                        <h1 class="text-4xl md:text-6xl text-heading tracking-tighter font-bold">Operating Networks — 24/7 Service Delivery</h1>
+                        <p class="mt-6 text-paragraph text-lg">We optimized distributed operations to provide consistent 24/7 service delivery, reduce handoff friction, and improve SLA compliance across regions.</p>
+
+                        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="p-4 rounded-lg bg-sky-50">
+                                <h4 class="text-2xl text-heading font-bold">24/7</h4>
+                                <p class="text-sm text-paragraph">Active coverage</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-sky-50">
+                                <h4 class="text-2xl text-heading font-bold">30%</h4>
+                                <p class="text-sm text-paragraph">Lower operational costs</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-sky-50">
+                                <h4 class="text-2xl text-heading font-bold">15%</h4>
+                                <p class="text-sm text-paragraph">Improved SLA compliance</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="../contact.html" class="inline-block px-6 py-3 rounded-md bg-button text-white">Talk to our ops team</a>
+                            <a href="../index.html" class="inline-block ml-4 px-6 py-3 rounded-md border border-gray-200">Back to Home</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="../assets/images/computer-2.webp" alt="Operating networks" class="w-full rounded-xl object-cover h-80 shadow-lg" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="mt-12 grid lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 prose text-paragraph">
+                        <h2>Challenge</h2>
+                        <p>The client operated fragmented regional teams with inconsistent tooling, leading to frequent handoff errors and missed SLAs.</p>
+
+                        <h2>Solution</h2>
+                        <p>We standardized operating procedures, implemented a unified monitoring layer, created runbooks, and set up cross-region shift overlaps to ensure smooth handoffs.</p>
+
+                        <h2>Implementation Highlights</h2>
+                        <ul>
+                            <li>Unified real-time dashboards and alerts</li>
+                            <li>Cross-training and shared runbooks</li>
+                            <li>Automated incident routing with escalation policies</li>
+                        </ul>
+
+                        <h2>Business Impact</h2>
+                        <p>Operations became more predictable, MTTR dropped significantly, and the client maintained SLAs even during peak loads.</p>
+
+                        <blockquote class="border-l-4 border-sky-600 pl-4 mt-6">
+                            “Netcrease delivered the operational maturity we needed to scale globally.”
+                            <div class="mt-2 text-sm text-gray-600">— Head of Ops, Global Services Client</div>
+                        </blockquote>
+                    </div>
+
+                    <aside class="prose bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-heading">Tools & practices</h3>
+                        <ul>
+                            <li>Monitoring: Datadog, Prometheus</li>
+                            <li>Incident Mgmt: PagerDuty</li>
+                            <li>Collaboration: Slack, Confluence</li>
+                            <li>Staffing: Follow-the-sun rotas</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../js/services-header.js"></script>
+    <script src="../js/services-footer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+    <script src="../trial.js"></script>
+</body>
+
+</html>

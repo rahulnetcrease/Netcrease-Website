@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>System Design — Case Study | Netcrease Global Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="../css/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { eyebrow: "#1C4987", heading: "#13315C", paragraph: "#113969", button: '#112D55' }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div id="header"></div>
+
+    <main class="pt-[88px]">
+        <section class="bg-white">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <span class="inline-block mb-4 text-sm text-eyebrow font-semibold uppercase tracking-widest">Enterprise Systems</span>
+                        <h1 class="text-4xl md:text-6xl text-heading tracking-tighter font-bold">System Design — Scalable Architecture</h1>
+                        <p class="mt-6 text-paragraph text-lg">We redesigned a complex enterprise platform to support rapid growth, higher concurrency, and stronger operational resilience while reducing costs.</p>
+
+                        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="p-4 rounded-lg bg-sky-50">
+                                <h4 class="text-2xl text-heading font-bold">99.9%</h4>
+                                <p class="text-sm text-paragraph">Uptime after redesign</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-sky-50">
+                                <h4 class="text-2xl text-heading font-bold">45%</h4>
+                                <p class="text-sm text-paragraph">Lower average latency</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-sky-50">
+                                <h4 class="text-2xl text-heading font-bold">3x</h4>
+                                <p class="text-sm text-paragraph">Faster release cadence</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="../contact.html" class="inline-block px-6 py-3 rounded-md bg-button text-white">Discuss a similar project</a>
+                            <a href="../index.html" class="inline-block ml-4 px-6 py-3 rounded-md border border-gray-200">Back to Home</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="../assets/images/network.webp" alt="System design" class="w-full rounded-xl object-cover h-80 shadow-lg" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="mt-12 grid lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 prose text-paragraph">
+                        <h2>Challenge</h2>
+                        <p>The legacy monolith could not keep up with increased load, deployments were slow and risky, and the monitoring surface was fragmented across teams.</p>
+
+                        <h2>Solution</h2>
+                        <p>We designed a domain-driven, service-oriented architecture with clear service boundaries, implemented horizontal autoscaling, adopted containerization, and standardized CI/CD pipelines with automated tests and Canary releases.</p>
+
+                        <h2>Implementation Highlights</h2>
+                        <ul>
+                            <li>Refactored core modules into independently deployable services</li>
+                            <li>Introduced centralized logging and distributed tracing (OpenTelemetry)</li>
+                            <li>Implemented autoscaling groups and redundant failover paths</li>
+                            <li>Automated blue/green deployments to reduce risk</li>
+                        </ul>
+
+                        <h2>Business Impact</h2>
+                        <p>Following the rollout, the client saw marked improvements in reliability, a measurable reduction in incident MTTR, and the ability to onboard new customers without major infra investments.</p>
+
+                        <blockquote class="border-l-4 border-sky-600 pl-4 mt-6">
+                            “Netcrease transformed our platform—downtime is virtually gone and we ship features faster.”
+                            <div class="mt-2 text-sm text-gray-600">— CTO, Enterprise Client</div>
+                        </blockquote>
+                    </div>
+
+                    <aside class="prose bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-heading">Tech stack & tools</h3>
+                        <ul>
+                            <li>Containers: Docker, Kubernetes</li>
+                            <li>CI/CD: GitHub Actions</li>
+                            <li>Monitoring: Prometheus, Grafana, OpenTelemetry</li>
+                            <li>Cloud: AWS (EKS, RDS, S3)</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../js/services-header.js"></script>
+    <script src="../js/services-footer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+</body>
+
+</html>
