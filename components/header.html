@@ -15,7 +15,7 @@
             <div class="relative group">
                 <!-- Trigger -->
                 <a href="./services.html"
-                    class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors flex items-center gap-1">
+                    class="flex items-center gap-1 text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">
                     Services
                     <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -24,41 +24,64 @@
                 </a>
 
                 <!-- Dropdown -->
-                <div class="absolute left-0 top-full pt-3 z-[999]
-        opacity-0 invisible
-        group-hover:opacity-100 group-hover:visible
-        transition-all duration-300">
+                <div class="absolute left-1/2 top-full mt-4 -translate-x-1/2
+               opacity-0 invisible group-hover:opacity-100 group-hover:visible
+               transition-all duration-200 ease-out z-[999]">
 
-                    <div class="w-56 bg-white shadow-xl rounded-xl border border-gray-100">
+                    <!-- Arrow -->
+                    <div
+                        class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-l border-t border-gray-200">
+                    </div>
+
+                    <!-- Panel -->
+                    <div class="w-64 bg-white border border-gray-200 rounded-xl
+                   shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
+
                         <ul class="py-3">
                             <li>
-                                <a href="./services/bpo-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
+                                <a href="./services/bpo-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
                                     BPO Services
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Customer support & operations
+                                    </span>
                                 </a>
                             </li>
+
                             <li>
-                                <a href="./services/web-development-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
-                                    Web Development
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./services/digital-marketing-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
-                                    Digital Marketing
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./services/kpo-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
+                                <a href="./services/kpo-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
                                     KPO Services
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Research & analytics
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./services/web-development-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    Web Development
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Scalable & secure builds
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./services/digital-marketing-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    Digital Marketing
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        SEO & performance growth
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
 
             <a href="./whynetcrease.html"
                 class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">Why Netcrease</a>
@@ -68,7 +91,7 @@
                 class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">Contact</a>
             <a href="./contact.html"
                 class="ml-4 px-6 py-2.5 rounded-full bg-heading text-white text-sm font-semibold hover:bg-sky-900 transition-all shadow-lg hover:shadow-sky-200/50">Get
-                Started</a>
+                Quote</a>
         </nav>
 
         <!-- Mobile Menu Toggle -->
@@ -135,7 +158,7 @@
 
             <a href="./contact.html"
                 class="w-full py-4 bg-heading text-white text-center font-bold rounded-xl shadow-xl shadow-sky-900/10 hover:bg-sky-900 transition-all">
-                Get Started Now
+                Get Quote
             </a>
 
             <!-- Socials -->
