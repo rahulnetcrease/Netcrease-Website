@@ -593,38 +593,7 @@
 
         </section>
 
-       
-            <div class="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto px-6">
-                <div>
-                    <img src="./assets/images/network-2.webp" alt="Leadership" class="" loading="lazy" />
-                </div>
-
-                <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
-                    <span class="text-eyebrow text-sm font-semibold uppercase tracking-widest">
-                        What Drives Us
-                    </span>
-
-                    <h2 class="word text-5xl text-heading font-bold tracking-tight">
-                        Leadership & Culture
-                    </h2>
-
-                    <p class="mt-8 text-lg text-paragraph leading-relaxed max-w-4xl mx-auto">
-                        At Netcrease, leadership is driven by collaboration, transparency,
-                        and a deep understanding of global business needs.
-                        Our teams operate as extensions of our clients—aligned, accountable,
-                        and focused on outcomes.
-                    </p>
-
-                    <p class="mt-4 text-lg text-paragraph leading-relaxed max-w-4xl mx-auto">
-                        We foster a culture of learning, innovation, and ownership—ensuring
-                        consistent service quality and long-term partnerships.
-                    </p>
-                    <a href="#" class="inline-flex items-center gap-2 mt-8 text-eyebrow font-semibold
-                    group-hover:gap-3 transition-all">
-                        Learn more →
-                    </a>
-                </div>
-            </div>
+    
 
         </section> 
 
@@ -706,54 +675,75 @@
                 </div>
             </div>
 
-            <div class="relative rounded-2xl max-w-2xl mx-auto border border-gray-200 bg-white shadow-xl p-10"
+            <div class="relative rounded-2xl max-w-2xl mx-auto border border-gray-200 bg-white shadow-xl p-10 mb-12"
                 data-aos="fade-up" data-aos-delay="100">
 
-                <form id="contactForm" action="https://formspree.io/f/xgovjqew" method="POST" class="space-y-6">
+                 <form id="contactForm" action="https://formsubmit.co/ajax/rahul@netcrease.com" method="POST"
+                        class="mt-8 space-y-6">
+                        <input type="hidden" name="_captcha" value="true">
+                        
+                        <input type="hidden" name="_subject" value="New Business Inquiry - Netcrease">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        <div class="space-y-1">
+                            <label class="block text-sm font-medium text-paragraph">
+                                Full Name
+                            </label>
+                            <input type="text" name="name" required
+                                class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-400">
+                        </div>
 
-                    <div>
-                        <label class="block mb-2 text-sm font-medium text-gray-700">
-                            Full Name
-                        </label>
-                        <input type="text" name="name" required placeholder="John Doe" class="w-full rounded-lg border border-gray-300 px-4 py-3
-                     focus:outline-none focus:ring-2 focus:ring-sky-600" />
-                    </div>
+                        <div class="space-y-1">
+                            <label class="block text-sm font-medium text-paragraph">
+                                Work Email
+                            </label>
+                            <input type="email" name="email" required
+                                class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-400">
+                        </div>
 
-                    <div>
-                        <label class="block mb-2 text-sm font-medium text-gray-700">
-                            Email Address
-                        </label>
-                        <input type="email" name="email" required placeholder="you@company.com" class="w-full rounded-lg border border-gray-300 px-4 py-3
-                     focus:outline-none focus:ring-2 focus:ring-sky-600" />
-                    </div>
+                        <div class="space-y-1">
+                            <label class="block text-sm font-medium text-paragraph">
+                                Company Name
+                            </label>
+                            <input type="text" name="company"
+                                class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-400">
+                        </div>
 
-                    <div>
-                        <label class="block mb-2 text-sm font-medium text-gray-700">
-                            Phone Number
-                        </label>
-                        <input type="tel" name="phone" placeholder="+1 (555) 000-0000" class="w-full rounded-lg border border-gray-300 px-4 py-3
-                     focus:outline-none focus:ring-2 focus:ring-sky-600" />
-                    </div>
+                        <div class="space-y-1">
+                            <label class="block text-sm font-medium text-paragraph">
+                                Services Interested In
+                            </label>
+                            <select name="service" required
+                                class="w-full text-heading rounded-lg border border-neutral-300 px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400">
+                                <option>BPO Services</option>
+                                <option>KPO Services</option>
+                                <option>ITES Solutions</option>
+                                <option>Call Center Services</option>
+                                <option>Software Development</option>
+                                <option>Consulting</option>
+                                <option>Digital Marketing</option>
+                                <option>Web Development</option>
+                            </select>
+                        </div>
 
-                    <div>
-                        <label class="block mb-2 text-sm font-medium text-gray-700">
-                            Your Message
-                        </label>
-                        <textarea name="message" required rows="4" placeholder="Tell us about your requirements..."
-                            class="w-full rounded-lg border border-gray-300 px-4 py-3
-                     focus:outline-none focus:ring-2 focus:ring-sky-600"></textarea>
-                    </div>
+                        <div class="space-y-1">
+                            <label class="block text-sm font-medium text-paragraph">
+                                Tell Us About Your Requirement
+                            </label>
+                            <textarea name="message" rows="4" required
+                                class="w-full rounded-lg border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-400"></textarea>
+                        </div>
 
-                    <button type="submit" class="w-full rounded-lg bg-heading px-8 py-4 text-white font-semibold
-                   hover:bg-sky-700 transition">
-                        Send Message
-                    </button>
+                        <button type="submit"
+                            class="w-full mt-4 px-6 py-4 rounded-lg bg-heading text-white font-medium hover:opacity-90 transition">
+                            Submit Inquiry
+                        </button>
 
-                    <p class="text-xs text-gray-500 text-center">
-                        We’ll get back to you within 24 hours.
-                    </p>
+                        <p class="text-xs text-paragraph text-center mt-4">
+                            We respect your privacy. No spam. No sales pressure.
+                        </p>
 
-                </form>
+                    </form>
             </div>
         </section>
 
