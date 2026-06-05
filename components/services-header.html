@@ -1,20 +1,21 @@
 <header class="fixed top-0 left-0 w-full z-[100] backdrop-blur bg-white/70 border-b transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="../index.html" class="flex items-center relative z-[102]">
+        <a href="../index.html" class="flex items-center relative z-[102]" aria-label="Go to homepage">
             <img src="../assets/images/logo.webp" alt="Netcrease Global Services LLP logo" class="w-40 md:w-48 h-auto"
-                loading="lazy" />
+                width="192" height="48" loading="eager" fetchpriority="high" decoding="async" />
+
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-8 ml-auto">
+        <nav class="hidden md:flex items-center gap-8 ml-auto relative">
             <a href="../index.html"
                 class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">Home</a>
             <a href="../about.html"
                 class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">About</a>
-             <div class="relative group">
+            <div class=" group">
                 <!-- Trigger -->
                 <a href="../services.html"
-                    class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors flex items-center gap-1">
+                    class="flex items-center gap-1 text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">
                     Services
                     <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -23,43 +24,115 @@
                 </a>
 
                 <!-- Dropdown -->
-                <div class="absolute left-0 top-full pt-3 z-[999]
-        opacity-0 invisible
-        group-hover:opacity-100 group-hover:visible
-        transition-all duration-300">
+                <div class="absolute top-full left-0 mt-2 -translate-x-1/2
+               opacity-0 invisible group-hover:opacity-100 group-hover:visible
+               transition-all duration-200 ease-out z-[999]">
 
-                    <div class="w-56 bg-white shadow-xl rounded-xl border border-gray-100">
-                        <ul class="py-3">
-                            <li>
-                                <a href="/services/bpo-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
+                    <!-- Arrow -->
+                    <!-- <div
+                        class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-l border-t border-gray-200">
+                    </div> -->
+
+                    <!-- Panel -->
+                    <div class=" bg-white border border-gray-200 rounded-xl
+                   shadow-lg">
+
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 py-4">
+                            <div>
+                                <a href="../services/bpo-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
                                     BPO Services
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Customer support, back-office operations, and process management solutions.
+                                    </span>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="/services/web-development-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
-                                    Web Development
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/services/digital-marketing-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
-                                    Digital Marketing
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/services/kpo-service.html"
-                                    class="block px-5 py-2 text-sm text-paragraph hover:bg-sky-50 hover:text-sky-600">
+                            </div>
+
+                            <div>
+                                <a href="../services/kpo-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
                                     KPO Services
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Data-driven research, analytics, and specialized business insights.
+                                    </span>
                                 </a>
-                            </li>
-                        </ul>
+                            </div>
+
+                            <div>
+                                <a href="../services/ites-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    ITES Services
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Technology-enabled support services that improve operational efficiency.
+                                    </span>
+                                </a>
+                            </div>
+
+
+                            <div>
+                                <a href="../services/call-center-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    Call Center Services
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Inbound and outbound customer support with seamless communication.
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="../services/consultancy-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    Consultancy Services
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Strategic guidance to optimize business performance and growth.
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="../services/digital-marketing-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    Digital Marketing
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        SEO, social media, and performance marketing to boost visibility.
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="../services/software-development-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    Software Development
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Custom software solutions built for scalability and innovation.
+                                    </span>
+                                </a>
+                            </div>
+
+            
+                            
+
+                            <div>
+                                <a href="../services/web-development-service.html" class="block px-6 py-3 text-sm text-paragraph
+                               hover:bg-gray-50 hover:text-sky-600 transition">
+                                    Web Development
+                                    <span class="block text-xs text-gray-400 mt-0.5">
+                                        Responsive, secure, and high-performing websites for modern businesses.
+                                    </span>
+                                </a>
+                            </div>
+
+                            
+                        </div>
                     </div>
                 </div>
             </div>
+
+
             <a href="../whynetcrease.html"
                 class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">Why Netcrease</a>
+            <a href="../blog.html"
+                class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">Blog</a>
             <a href="../contact.html"
                 class="text-sm font-medium text-paragraph hover:text-sky-600 transition-colors">Contact</a>
             <a href="../contact.html"
@@ -69,7 +142,8 @@
 
         <!-- Mobile Menu Toggle -->
         <button id="mobileBtn"
-            class="md:hidden relative z-[102] w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none group">
+            class="md:hidden relative z-[102] w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none group"
+            aria-label="Open main menu" aria-controls="mobileMenu" aria-expanded="false">
             <span class="hamburger-line w-6 h-0.5 bg-heading transition-all duration-300 origin-center"></span>
             <span class="hamburger-line w-6 h-0.5 bg-heading transition-all duration-300 origin-center"></span>
             <span class="hamburger-line w-6 h-0.5 bg-heading transition-all duration-300 origin-center"></span>
@@ -136,9 +210,10 @@
             <!-- Socials -->
             <div class="flex gap-6">
                 <a href="https://www.linkedin.com/company/netcrease"
-                    class="text-gray-400 hover:text-heading transition-colors">LinkedIn</a>
-                <a href="https://www.facebook.com/netcrease"
-                    class="text-gray-400 hover:text-heading transition-colors">Facebook</a>
+                    class="text-gray-400 hover:text-heading transition-colors"
+                    aria-label="Netcrease on LinkedIn">LinkedIn</a>
+                <a href="https://www.facebook.com/netcrease" class="text-gray-400 hover:text-heading transition-colors"
+                    aria-label="Netcrease on Facebook">Facebook</a>
             </div>
         </div>
     </div>
