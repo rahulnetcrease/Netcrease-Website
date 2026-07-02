@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -11,10 +11,14 @@
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
   
 
+    <!-- Preconnect to CDN origins for faster resource loading -->
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <meta name="description"
         content="Netcrease Global Services LLP is a leading BPO, KPO, ITES, Call center and Software outsourcing company in India, helping businesses worldwide improve efficiency, reduce costs and scale operations.">
     <link rel="stylesheet" href="./dist/output.css">
@@ -69,11 +73,21 @@
 
 
 <body class=" overflow-x-hidden">
+    <!-- Page loader: CSS timeout ensures it auto-hides within 3.5s even if JS is slow -->
+    <style>
+        @keyframes loaderFadeOut {
+            0%, 80% { opacity: 1; pointer-events: all; }
+            100% { opacity: 0; pointer-events: none; }
+        }
+        #pageLoader {
+            animation: loaderFadeOut 3.5s ease forwards;
+        }
+    </style>
     <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
 
         <div class="flex flex-col items-center gap-6">
             <img src="./assets/images/logo.webp" alt="Netcrease Global Services - Modern BPO and IT Solutions Logo"
-                class="w-48 animate-pulse" loading="lazy" />
+                class="w-48 animate-pulse" loading="eager" />
         </div>
 
     </div>
@@ -1029,15 +1043,17 @@
 
 
 
-    <script src="/js/header.js"></script>
-    <script src="/js/footer.js"></script>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/footer.js" defer></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <script src="./js/smooth-scroll.js"></script>
-    <script src="./js/contact.js"></script>
-    <script src="./trial.js"></script>
+    <!-- GSAP moved from <head> to here (end of body) to eliminate render-blocking -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./trial.js" defer></script>
 
 </body>
 

@@ -10,8 +10,8 @@
     <link rel="canonical" href="https://www.netcrease.com/services" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    
+    
     <meta name="description"
         content="Netcrease provides expert BPO, KPO, ITES, Call center, Software development, and Consultancy services in India. We deliver scalable outsourcing solutions that enhance efficiency, productivity, and business growth for clients worldwide.">
     <link rel="stylesheet" href="./dist/output.css">
@@ -92,6 +92,14 @@
 
 
 <body>
+    <!-- CSS fallback: auto-hide loader after 3.5s even if JS is slow -->
+    <style>
+        @keyframes loaderFadeOut {
+            0%, 80% { opacity: 1; pointer-events: all; }
+            100%     { opacity: 0; pointer-events: none; }
+        }
+        #pageLoader { animation: loaderFadeOut 3.5s ease forwards; }
+    </style>
     <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
 
         <div class="flex flex-col items-center gap-6">
@@ -875,6 +883,9 @@
 
 
 
+    <!-- GSAP (moved to end of body to be non-render-blocking) -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </body>
 
 
