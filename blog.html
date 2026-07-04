@@ -10,8 +10,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    
-    
+
+
     <meta name="description"
         content="Expert insights on BPO, KPO, digital transformation, IT outsourcing, and networking infrastructure. Read industry guides and best practices from Netcrease Global.">
     <link rel="stylesheet" href="./dist/output.css">
@@ -49,10 +49,22 @@
     <!-- CSS fallback: auto-hide loader after 3.5s even if JS is slow -->
     <style>
         @keyframes loaderFadeOut {
-            0%, 80% { opacity: 1; pointer-events: all; }
-            100%     { opacity: 0; pointer-events: none; }
+
+            0%,
+            80% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
         }
-        #pageLoader { animation: loaderFadeOut 3.5s ease forwards; }
+
+        #pageLoader {
+            animation: loaderFadeOut 3.5s ease forwards;
+        }
     </style>
     <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
         <div class="flex flex-col items-center gap-6">
@@ -216,15 +228,22 @@
                 <p class="mt-6 text-xs text-paragraph/50 italic">Zero spam. Pure value. Insights for global leaders.</p>
             </div>
         </section>
+        <div id="footer"></div>
     </main>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/footer.js" defer></script>
 
-    <div id="footer"></div>
+    <!-- GSAP moved from <head> to here (end of body) to eliminate render-blocking -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./trial.js" defer></script>
 
-    <script src="/js/footer.js"></script>
-    <script src="/js/header.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <script src="./js/smooth-scroll.js"></script>
+
+
 
 
     <script>

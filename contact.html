@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 
 
-    
-    
+
+
     <meta name="description"
         content="Get in touch with Netcrease Global Services LLP for BPO, KPO & IT outsourcing solutions. Our expert team is ready to discuss your business needs and provide tailored services.">
     <link rel="stylesheet" href="./dist/output.css">
@@ -72,11 +72,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVN65761K"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-GZVN65761K');
+    gtag('config', 'G-GZVN65761K');
 </script>
 
 
@@ -84,10 +84,22 @@
     <!-- CSS fallback: auto-hide loader after 3.5s even if JS is slow -->
     <style>
         @keyframes loaderFadeOut {
-            0%, 80% { opacity: 1; pointer-events: all; }
-            100%     { opacity: 0; pointer-events: none; }
+
+            0%,
+            80% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
         }
-        #pageLoader { animation: loaderFadeOut 3.5s ease forwards; }
+
+        #pageLoader {
+            animation: loaderFadeOut 3.5s ease forwards;
+        }
     </style>
     <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
 
@@ -164,10 +176,10 @@
                         Start the Conversation
                     </h3>
 
-                    <form id="contactForm" action="https://formsubmit.co/ajax/224de73a402f0dd173b794b0129a5bcf" method="POST"
-                        class="mt-8 space-y-6">
+                    <form id="contactForm" action="https://formsubmit.co/ajax/224de73a402f0dd173b794b0129a5bcf"
+                        method="POST" class="mt-8 space-y-6">
                         <input type="hidden" name="_captcha" value="true">
-                        
+
                         <input type="hidden" name="_subject" value="New Business Inquiry - Netcrease">
                         <input type="hidden" name="_template" value="table">
                         <input type="text" name="_honey" style="display:none">
@@ -304,7 +316,7 @@
                             <p><strong>Working Hours:</strong> Mon-Fri, 11:00 AM - 8:00 PM IST</p>
                             <p><strong>Phone Number:</strong> +91 9324-644-100</p>
                         </div>
-                        
+
                     </div>
 
                 </div>
@@ -314,15 +326,29 @@
 
         <div id="footer"></div>
     </main>
-    <script src="/js/header.js"></script>
-    <script src="/js/footer.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <script src="./js/smooth-scroll.js"></script>
-    <script src="./js/contact.js"></script>
-    <script src="./trial.js"></script>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/footer.js" defer></script>
+
+    <!-- GSAP moved from <head> to here (end of body) to eliminate render-blocking -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./trial.js" defer></script>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/footer.js" defer></script>
+
+    <!-- GSAP moved from <head> to here (end of body) to eliminate render-blocking -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./trial.js" defer></script>
+
 </body>
 
 </html>
-
-

@@ -10,8 +10,8 @@
     <link rel="canonical" href="https://www.netcrease.com/about" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    
-    
+
+
     <meta name="description"
         content="Learn about Netcrease Global Services LLP - a trusted BPO, KPO & IT outsourcing partner since 2018. Delivering innovative business solutions globally with expert teams and proven track record.">
     <link rel="stylesheet" href="./dist/output.css">
@@ -62,7 +62,7 @@
     </script>
 
 
-    
+
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
 
@@ -80,11 +80,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVN65761K"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-GZVN65761K');
+    gtag('config', 'G-GZVN65761K');
 </script>
 
 
@@ -92,10 +92,22 @@
     <!-- CSS fallback: auto-hide loader after 3.5s even if JS is slow -->
     <style>
         @keyframes loaderFadeOut {
-            0%, 80% { opacity: 1; pointer-events: all; }
-            100%     { opacity: 0; pointer-events: none; }
+
+            0%,
+            80% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
         }
-        #pageLoader { animation: loaderFadeOut 3.5s ease forwards; }
+
+        #pageLoader {
+            animation: loaderFadeOut 3.5s ease forwards;
+        }
     </style>
     <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
 
@@ -497,6 +509,7 @@
 
         <div id="footer"></div>
     </main>
+
     <!-- CARD TILT -->
     <script>
         VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
@@ -519,25 +532,6 @@
         });
     </script>
 
-    <!-- LOADING LOGO -->
-    <script>
-        gsap.to("#loaderBar", {
-            width: "100%",
-            duration: 1.5,
-            ease: "power2.out"
-        });
-
-        window.addEventListener("load", () => {
-            gsap.to("#pageLoader", {
-                opacity: 0,
-                duration: 0.8,
-                delay: 0.5,
-                onComplete: () => {
-                    document.getElementById("pageLoader").style.display = "none";
-                }
-            });
-        });
-    </script>
     <!-- WORD BY WORD ANIMATION -->
     <script>
         document.querySelectorAll('.word').forEach(el => {
@@ -567,32 +561,18 @@
         document.querySelectorAll('.word').forEach(el => observer.observe(el));
     </script>
 
-    <script src="/js/header.js"></script>
-    <script src="/js/footer.js"></script>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/footer.js" defer></script>
 
-    <!-- AOS ANIMATION-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 900,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 0,
-            delay: 0,
-            anchorPlacement: 'top-bottom',
-            disable: 'mobile',
-        });
-    </script>
-
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <script src="./js/smooth-scroll.js"></script>
-
-    <!-- GSAP (moved to end of body to be non-render-blocking) -->
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <!-- GSAP moved from <head> to here (end of body) to eliminate render-blocking -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./trial.js" defer></script>
 </body>
 
 
 </html>
-
-

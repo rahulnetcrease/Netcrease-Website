@@ -9,8 +9,8 @@
     <link rel="canonical" href="https://www.netcrease.com/blog/strategic-outsourcing" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    
-    
+
+
     <meta name="description"
         content="Strategic BPO and KPO outsourcing guide for business scalability & growth. Learn how partnerships drive cost savings and build future-ready enterprises.">
     <link rel="stylesheet" href="../dist/output.css">
@@ -35,21 +35,33 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVN65761K"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-GZVN65761K');
+    gtag('config', 'G-GZVN65761K');
 </script>
 
 <body class="overflow-x-hidden bg-white">
     <!-- CSS fallback: auto-hide loader after 3.5s even if JS is slow -->
     <style>
         @keyframes loaderFadeOut {
-            0%, 80% { opacity: 1; pointer-events: all; }
-            100%     { opacity: 0; pointer-events: none; }
+
+            0%,
+            80% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
         }
-        #pageLoader { animation: loaderFadeOut 3.5s ease forwards; }
+
+        #pageLoader {
+            animation: loaderFadeOut 3.5s ease forwards;
+        }
     </style>
     <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
         <div class="flex flex-col items-center gap-6">
@@ -142,6 +154,17 @@
             </div>
         </article>
     </main>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/footer.js" defer></script>
+
+    <!-- GSAP moved from <head> to here (end of body) to eliminate render-blocking -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./trial.js" defer></script>
 
     <div id="footer"></div>
 
@@ -150,19 +173,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="../js/smooth-scroll.js"></script>
-    
+
     <script>
         AOS.init();
     </script>
 
-  <script src="trial.js"></script>
+    <script src="trial.js"></script>
 
-  <script src="../trial.js"></script>
+    <script src="../trial.js"></script>
 </body>
 
 </html>
-
-
-
-
-
