@@ -56,19 +56,19 @@
 
     <link rel="stylesheet" href="./css/global.css" />
 
-    <!-- MASK REVEAL -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVN65761K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GZVN65761K');
+    </script>
 
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZVN65761K"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-GZVN65761K');
-</script>
 
 
 
@@ -90,7 +90,7 @@
         }
 
         #pageLoader {
-            animation: loaderFadeOut 3.5s ease forwards;
+            animation: loaderFadeOut 1.0s ease forwards;
         }
     </style>
     <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
