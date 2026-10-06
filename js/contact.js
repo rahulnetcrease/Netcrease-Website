@@ -16,12 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
             try {
                 const response = await fetch(form.action, {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
                 });
 
-                const data = await response.json();
-
-                if (data.success === "true") {
+                if (response.ok) {
                     form.innerHTML = `
                         <div class="text-center py-12 space-y-4">
                             <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -32,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                     `;
                 } else {
-                    alert("Oops! Something went wrong. Please try again.");
+                    const data = await response.json();
+                    alert(data.error || "Oops! Something went wrong. Please try again.");
                     submitBtn.disabled = false;
                     submitBtn.innerText = originalBtnText;
                 }
